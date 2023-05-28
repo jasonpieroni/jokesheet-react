@@ -2,10 +2,6 @@ import React from "react"
 
 export default function Joke(props) {
     const [isShown, setIsShown] = React.useState(false)
-    /**
-     * Challenge:
-     * - Only display the punchline paragraph if `isShown` is true
-     */
     function toggleShown(){
         setIsShown(prevShown => !prevShown)
     }
